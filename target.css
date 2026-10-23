@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 30;
+}
+
+@font-face {
+    font-family: dulce;
+    src: url(PrettyGirl.ttf);
+}
+
+body{
+    background-image:linear-gradient(to right,rgb(178, 227, 247),rgb(198, 250, 198));
+}
+
+img{
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    border: 5px rgb(214,197,164) solid;
+}
+
+.galeria{
+    display:flex;
+    gap:20px;
+    justify-content: space-evenly;
+    background-color:antiquewhite;
+    margin:30px;
+    border-radius:50px;
+    border:5px rgb(214, 197, 164) solid
+}
+#arrozconleche{
+    display:none
+}
+
+#arrozconleche:target{
+    display:block
+}
+#milanesa{
+    display:none
+}
+
+#milanesa:target{
+    display:block
+}
+
+#chocotorta{
+    display:none
+}
+
+#chocotorta:target{
+    display:block
+}
+
+figure{
+    transition:transform;
+    transition-duration: 1.5s;
+}
+
+figure:hover{
+    transform:rotate(360deg);
+}
+
+article{
+    background-color:whitesmoke;
+    padding:10px;
+    border:3px rgb(214,197,164) solid;
+    font-family: dulce;
+    margin:100px;
+    position:absolute;
+    top:200px;
+    width:80vw;
+    border-radius: 30px;
+    color:rgb(156, 132, 95)
+}
+
+ul{
+    list-style:none;
+    font-size:45px;
+    text-align:center;
+}
+
+h3{
+    font-size:60px;
+    text-align: center;
+}
+
+p{
+    font-size: 40px;
+}
